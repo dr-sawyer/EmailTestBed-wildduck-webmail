@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+    etb-wd-webmail:
+        restart: unless-stopped
+        container_name: etb-wd-webmail
+        build:
+            context: ../
+            dockerfile: ./docker/Dockerfile
+        # image: nodemailer/wildduck
+        network_mode: bridge
+        ports:
+            - "80:3000"
+        environment:
+            WILDDUCK_CONFIG: "/wildduck/config/default-qa.toml"
+            # WILDDUCK_CONFIG: "/wildduck/config/default.toml"

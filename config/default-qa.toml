@@ -1,0 +1,76 @@
+name="LABX - ETB"
+
+title="LABX - Email Test Bed"
+
+[service]
+    # email domain for new users
+    domain="emailtestbed.xyz"
+    # default quotas for new users
+    quota=1024
+    recipients=2000
+    forwards=2000
+    identities=10
+    allowIdentityEdit=true
+    allowJoin=true
+    enableSpecial=false # if true the allow creating addresses with special usernames
+    # allowed domains for new addresses
+    domains=["emailtestbed.xyz"]
+
+    generalNotification="" # static notification to show on top of the page
+
+[api]
+    url="http://emailtestbed.xyz:8080"
+    accessToken="a3d9a379a8093b167114dba76ade7653fa1ac6e5"
+
+[dbs]
+    # mongodb connection string for the main database
+    mongo="mongodb://emailtestbed.xyz:27017/wildduck"
+
+    # redis connection string for Express sessions
+    redis="redis://emailtestbed.xyz:6379/3"
+
+[www]
+    host=false
+    port=3000
+    proxy=false
+    postsize="5MB"
+    log="dev"
+    secret="a cat"
+    secure=false
+    listSize=20
+
+[recaptcha]
+    enabled=false
+    siteKey=""
+    secretKey=""
+
+[totp]
+    # Issuer name for TOTP, defaults to config.name
+    issuer=false
+    # once setup do not change as it would invalidate all existing 2fa sessions
+    secret="a secret cat"
+
+[u2f]
+    # set to false if not using HTTPS
+    enabled=false
+    # must be https url or use default
+    #appId="https://127.0.0.1:8080"
+
+[log]
+    level="info"
+    mail=true
+
+[setup]
+    # these values are shown in the configuration help page
+    [setup.imap]
+        hostname="emailtestbed.xyz"
+        secure=false
+        port=9993
+    [setup.pop3]
+        hostname="emailtestbed.xyz"
+        secure=true
+        port=9995
+    [setup.smtp]
+        hostname="emailtestbed.xyz"
+        secure=false
+        port=2424
