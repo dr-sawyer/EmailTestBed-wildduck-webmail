@@ -12,3 +12,6 @@ services:
             - "80:3000"
         environment:
             WILDDUCK_CONFIG: "/wildduck/config/default-qa.toml"
+        external_links: 
+            - etb-wd-mongo
+            - etb-wd-redis

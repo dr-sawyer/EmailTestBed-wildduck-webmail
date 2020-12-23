@@ -7,8 +7,8 @@ services:
             context: ../
             dockerfile: ./docker/Dockerfile
         # image: nodemailer/wildduck
-        network_mode: bridge
+        network_mode: host
         ports:
-            - "80:3000"
+            - "3000:3000"
         environment:
             WILDDUCK_CONFIG: "/wildduck/config/default.toml"
