@@ -75,7 +75,6 @@ English
 ![Signup](doc/img/new-acc.png)
 ![Sigin](doc/img/login.png)
 ![Webmail home](doc/img/main.png)
-
-
-
+![Webmail list](doc/img/list.png)
+![Webmail body](doc/img/email.png)
 
