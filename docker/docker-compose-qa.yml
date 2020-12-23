@@ -12,4 +12,3 @@ services:
             - "80:3000"
         environment:
             WILDDUCK_CONFIG: "/wildduck/config/default-qa.toml"
-            # WILDDUCK_CONFIG: "/wildduck/config/default.toml"

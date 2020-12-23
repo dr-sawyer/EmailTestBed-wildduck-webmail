@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:14-alpine
 
 RUN apk add --no-cache make git dumb-init python openssl
 
