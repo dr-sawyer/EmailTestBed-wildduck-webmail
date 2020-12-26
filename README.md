@@ -14,11 +14,11 @@ will be compatible too but I didn't test.
 2. Other option to install node is using nvm (node version manager). This allow you easily switch between the nodejs versions. https://github.com/nvm-sh/nvm
 3. commands to build and run the aplication locally:
 
-## Install the dependencies 
+#### Install the dependencies 
 
 `npm install && npm run bowerdeps`
 
-## Run the application
+#### Run the application
 
 `node server.js --config=config/default.toml`
 
