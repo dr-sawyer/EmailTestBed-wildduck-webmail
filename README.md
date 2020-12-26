@@ -20,7 +20,7 @@ will be compatible too but I didn't test.
 
 ## Run the application
 
-`node server.js --config=/wildduck/config/default.toml`
+`node server.js --config=config/default.toml`
 
 4.If everything is ok, you can access the webapp on http://localhost:3000
 
