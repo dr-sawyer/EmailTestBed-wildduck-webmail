@@ -22,7 +22,7 @@ will be compatible too but I didn't test.
 
 `node server.js --config=config/default.toml`
 
-4.If everything is ok, you can access the webapp on http://localhost:3000
+4. If everything is ok, you can access the webapp on http://localhost:3000
 
 ----------
 # Run using Docker
