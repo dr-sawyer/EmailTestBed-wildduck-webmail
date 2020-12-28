@@ -24,7 +24,7 @@ title="LABX - Email Test Bed"
 
 [dbs]
     # mongodb connection string for the main database
-    mongo="mongodb://emailtestbed.xyz:27017/wildduck"
+    mongo="mongodb://etb:ENlzPLlyv7@emailtestbed.xyz:27017/wildduck"
 
     # redis connection string for Express sessions
     redis="redis://emailtestbed.xyz:6379/3"
